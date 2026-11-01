@@ -1,0 +1,320 @@
+/* PERSONAL PORTFOLIO
+   Student: E. Kavya Amrutha | Roll No: 26000897
+   Technologies: HTML5 and CSS3 only
+*/
+
+:root {
+    --navy: #17243b;
+    --muted: #68758b;
+    --purple: #7457e8;
+    --lavender: #f3f0ff;
+    --pink: #f4a9c8;
+    --white: #ffffff;
+    --border: #e7e5ef;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--navy);
+    background: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 8%;
+    background: rgba(255, 255, 255, 0.96);
+    border-bottom: 1px solid var(--border);
+}
+
+.brand {
+    color: var(--navy);
+    font-size: 1.35rem;
+    font-weight: 900;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+}
+
+.brand span,
+h1 span,
+h2 span {
+    color: var(--purple);
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+nav a {
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--purple);
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+    gap: 55px;
+    min-height: 590px;
+    padding: 85px 12%;
+    background: linear-gradient(125deg, #f6f4ff, #fff4f8);
+}
+
+.eyebrow {
+    margin-bottom: 12px;
+    color: var(--purple);
+    font-size: 0.74rem;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+}
+
+h1 {
+    font-size: clamp(3.4rem, 7vw, 6rem);
+    line-height: 1;
+    letter-spacing: -0.07em;
+}
+
+.hero h2 {
+    margin: 18px 0 10px;
+    color: var(--muted);
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.intro,
+.section-lead {
+    max-width: 600px;
+    color: var(--muted);
+}
+
+.button {
+    display: inline-block;
+    margin-top: 26px;
+    padding: 12px 20px;
+    color: var(--white);
+    background: var(--purple);
+    border-radius: 7px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.button:hover {
+    background: #5d40d0;
+    transform: translateY(-3px);
+}
+
+.profile-panel {
+    padding: 38px;
+    text-align: center;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    box-shadow: 0 24px 65px rgba(45, 35, 100, 0.12);
+}
+
+.monogram {
+    display: grid;
+    place-items: center;
+    width: 135px;
+    height: 135px;
+    margin: 0 auto 22px;
+    color: var(--white);
+    background: linear-gradient(135deg, var(--purple), #b28cf5);
+    border-radius: 50%;
+    font-size: 2.6rem;
+    font-weight: 800;
+}
+
+.small-label,
+.muted {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.profile-panel h3 {
+    margin: 12px 0;
+    font-size: 1.8rem;
+    line-height: 1.25;
+}
+
+.section {
+    padding: 82px 12%;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -0.04em;
+}
+
+.three-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 32px;
+}
+
+.three-cards article {
+    padding: 25px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 13px;
+}
+
+.three-cards article > b {
+    color: var(--purple);
+    font-size: 0.8rem;
+}
+
+.three-cards h3 {
+    margin: 10px 0 7px;
+}
+
+.three-cards p {
+    color: var(--muted);
+    font-size: 0.92rem;
+}
+
+.soft {
+    background: var(--lavender);
+}
+
+.education-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    max-width: 650px;
+    padding: 25px;
+    background: var(--white);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.year {
+    padding: 9px 13px;
+    color: var(--purple);
+    background: #eee9ff;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 850px;
+    margin-top: 28px;
+}
+
+.skill > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.skill span {
+    color: var(--muted);
+    font-size: 0.82rem;
+}
+
+.bar {
+    height: 9px;
+    overflow: hidden;
+    background: #e9e5f5;
+    border-radius: 20px;
+}
+
+.bar i {
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg, var(--purple), var(--pink));
+    border-radius: inherit;
+}
+
+.note {
+    margin-top: 17px;
+}
+
+.project-cards article {
+    background: var(--white);
+}
+
+.pill {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 4px 11px;
+    color: var(--purple);
+    background: #f0edff;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    color: var(--muted);
+}
+
+footer {
+    padding: 22px;
+    color: #e1e5ef;
+    background: var(--navy);
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 760px) {
+    .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px 6%;
+    }
+
+    nav {
+        gap: 12px 17px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 8%;
+    }
+
+    .section {
+        padding: 62px 8%;
+    }
+
+    .three-cards,
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+}

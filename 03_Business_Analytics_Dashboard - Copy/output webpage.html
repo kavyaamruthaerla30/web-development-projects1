@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Northstar | Business Analytics Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <a class="brand" href="#overview">northstar<span>●</span></a>
+            <p class="side-label">WORKSPACE</p>
+            <a class="side-link active" href="#overview">▦ <span>Overview</span></a>
+            <a class="side-link" href="#performance">▤ <span>Performance</span></a>
+            <a class="side-link" href="#transactions">⇄ <span>Transactions</span></a>
+            <a class="side-link" href="#reports">▧ <span>Reports</span></a>
+            <div class="sidebar-bottom">
+                <div class="avatar">KA</div>
+                <div><b>Kavya Amrutha</b><small>Student project</small></div>
+            </div>
+        </aside>
+
+        <main class="main-content" id="overview">
+            <header class="topbar">
+                <div><p class="breadcrumb">Workspace / Overview</p><h1>Business overview</h1></div>
+                <div class="date-chip">◷ &nbsp; Academic demo dashboard</div>
+            </header>
+
+            <section class="welcome">
+                <div><p class="overline">MONDAY, BUSINESS SNAPSHOT</p><h2>Good morning, Kavya <span>✦</span></h2><p>Here is a sample overview of business performance.</p></div>
+                <div class="welcome-mark">N.</div>
+            </section>
+
+            <section class="metric-grid" aria-label="Key performance indicators">
+                <article class="metric-card"><p>Total revenue</p><div class="metric-value">₹8,42,500</div><span class="positive">↗ 12.8% <small>vs last month</small></span><div class="sparkline purple-line">▁▂▃▂▄▅▄▆▇</div></article>
+                <article class="metric-card"><p>Active users</p><div class="metric-value">24,680</div><span class="positive">↗ 8.2% <small>vs last month</small></span><div class="sparkline green-line">▂▃▂▄▃▅▆▅▇</div></article>
+                <article class="metric-card"><p>Orders</p><div class="metric-value">3,842</div><span class="positive">↗ 5.4% <small>vs last month</small></span><div class="sparkline orange-line">▁▃▂▄▅▄▆▅▇</div></article>
+                <article class="metric-card"><p>Conversion rate</p><div class="metric-value">4.86%</div><span class="negative">↘ 0.6% <small>vs last month</small></span><div class="sparkline pink-line">▇▆▅▆▄▅▃▄▃</div></article>
+            </section>
+
+            <section class="content-grid" id="performance">
+                <article class="panel revenue-panel">
+                    <div class="panel-heading"><div><p class="overline">PERFORMANCE</p><h3>Revenue overview</h3></div><span class="period">Last 7 months⌄</span></div>
+                    <div class="chart-legend"><span><i class="legend-dot violet-dot"></i> Revenue</span><span><i class="legend-dot grey-dot"></i> Target</span></div>
+                    <div class="bar-chart">
+                        <div class="y-labels"><span>10L</span><span>7.5L</span><span>5L</span><span>2.5L</span><span>0</span></div>
+                        <div class="chart-area">
+                            <div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+                            <div class="bars">
+                                <div class="bar-column"><i style="height: 42%"></i><span>May</span></div>
+                                <div class="bar-column"><i style="height: 58%"></i><span>Jun</span></div>
+                                <div class="bar-column"><i style="height: 50%"></i><span>Jul</span></div>
+                                <div class="bar-column"><i style="height: 72%"></i><span>Aug</span></div>
+                                <div class="bar-column"><i style="height: 65%"></i><span>Sep</span></div>
+                                <div class="bar-column"><i style="height: 82%"></i><span>Oct</span></div>
+                                <div class="bar-column"><i style="height: 92%"></i><span>Nov</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="panel source-panel">
+                    <div class="panel-heading"><div><p class="overline">ACQUISITION</p><h3>Traffic sources</h3></div><span class="more">•••</span></div>
+                    <div class="donut-wrap"><div class="donut"><div><strong>24.6k</strong><small>Visitors</small></div></div></div>
+                    <div class="source-list">
+                        <p><i class="legend-dot violet-dot"></i> Organic search <b>42%</b></p>
+                        <p><i class="legend-dot orange-dot"></i> Social media <b>28%</b></p>
+                        <p><i class="legend-dot green-dot"></i> Direct <b>18%</b></p>
+                        <p><i class="legend-dot grey-dot"></i> Referral <b>12%</b></p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="panel transactions" id="transactions">
+                <div class="panel-heading"><div><p class="overline">LATEST ACTIVITY</p><h3>Recent transactions</h3></div><a href="#transactions">View all ↗</a></div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Customer</th><th>Date</th><th>Product</th><th>Amount</th><th>Status</th></tr></thead>
+                        <tbody>
+                            <tr><td><b>Olivia Martin</b><small>olivia@example.com</small></td><td>Nov 12, 2026</td><td>Pro Plan</td><td>₹4,999</td><td><span class="status paid">Paid</span></td></tr>
+                            <tr><td><b>Jackson Lee</b><small>jackson@example.com</small></td><td>Nov 11, 2026</td><td>Starter Plan</td><td>₹1,499</td><td><span class="status pending">Pending</span></td></tr>
+                            <tr><td><b>Isabella Chen</b><small>isabella@example.com</small></td><td>Nov 10, 2026</td><td>Pro Plan</td><td>₹4,999</td><td><span class="status paid">Paid</span></td></tr>
+                            <tr><td><b>Noah Williams</b><small>noah@example.com</small></td><td>Nov 09, 2026</td><td>Team Plan</td><td>₹8,499</td><td><span class="status failed">Failed</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <footer id="reports">Northstar Analytics · Sample data for Web Development Activity-Based Learning</footer>
+        </main>
+    </div>
+</body>
+</html>
